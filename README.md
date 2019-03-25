@@ -1,25 +1,13 @@
+#Rails 5.2.0
 
-# README
+#git path https://github.com/anupamaanu/Item-app.git
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#Created all tables and implemented crud operation
 
-Things you may want to cover:
+#wrote functionality for finding tax and total and subtotal in items controller
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+#running commands 
+#rails s
+#browser url : localhost:3000/items
 
 
