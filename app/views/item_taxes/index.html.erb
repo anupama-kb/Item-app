@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+<h1>Item Taxes</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Tax</th>
+      <th>Item</th>
+      <th>Item type</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @item_taxes.each do |item_tax| %>
+      <tr>
+        <td><%= item_tax.tax %></td>
+        <td><%= item_tax.item.name %></td>
+        <td><%= item_tax.tax_type %></td>
+        <td><%= link_to 'Show', item_tax %></td>
+        <td><%= link_to 'Edit', edit_item_tax_path(item_tax) %></td>
+        <td><%= link_to 'Destroy', item_tax, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<br>
+<%= link_to 'New Item Tax', new_item_tax_path %>

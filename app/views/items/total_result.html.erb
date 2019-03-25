@@ -1,0 +1,36 @@
+<h1>Item Taxes</h1>
+<table>
+  <thead>
+  <tr>
+    <th>Item</th>
+    <th>rate</th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @items.each do |item| %>
+      <tr>
+        <td><%= Item.where(id: item).first.name %></td>
+        <td><%= Item.where(id: item).first.rate %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+<br>
+<table>
+  <thead>
+  <tr>
+    <th>Subtotal</th>
+    <th>Tax</th>
+    <th>Total</th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+  <tbody>
+  <td><%= @results %></td>
+  <td><%= @final %></td>
+  <td><%= @results+@final %></td>
+  </tr>
+  </tbody>
+</table>
+
